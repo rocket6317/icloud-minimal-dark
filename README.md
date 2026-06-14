@@ -1,5 +1,7 @@
 # iCloud Minimal Dark for Mailspring
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M31NTEGN)
+
 A compact, minimal dark theme for [Mailspring](https://www.getmailspring.com/)
 inspired by the clarity and spacing of Apple Mail and iCloud Mail.
 
