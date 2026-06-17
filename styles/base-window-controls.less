@@ -13,12 +13,14 @@
   background-color: @sidebar-text;
   background-image: none !important;
   float: none;
-  opacity: 0.5;
+  opacity: 1;
   margin: 0;
-  transform: scaleY(0.5);
-  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  transform: none;
+  border-radius: 50%;
   transition-duration: 150ms;
-  transition-property: border-radius, opacity, transform;
+  transition-property: opacity;
 }
 body.platform-linux .toolbar-window-controls button {
   width: 12px;
@@ -29,7 +31,7 @@ body.platform-linux .toolbar-window-controls button {
 .toolbar-window-controls:hover button {
   opacity: 1;
   border-radius: 50%;
-  transform: scaleY(1);
+  transform: none;
 }
 
 .toolbar-window-controls .close {
@@ -44,12 +46,16 @@ body.platform-linux .toolbar-window-controls button {
   background-color: @maximize;
 }
 
-.is-blurred {
-  .toolbar-window-controls .close,
-  .toolbar-window-controls .minimize,
-  .toolbar-window-controls .maximize {
-    background-color: fade(@sidebar-text, 50%);
-  }
+.is-blurred .toolbar-window-controls .close {
+  background-color: @danger;
+}
+
+.is-blurred .toolbar-window-controls .minimize {
+  background-color: @minimize;
+}
+
+.is-blurred .toolbar-window-controls .maximize {
+  background-color: @maximize;
 }
 
 // Compose Button Overrides
